@@ -1,0 +1,191 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    font-family: Georgia, 'Times New Roman', sans-serif;
+    background-color: #171311;
+}
+.navbar {
+    height: 100px;
+    width: 100%;
+    background-color: rgba(15, 14, 13, 0.92);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 7%;
+    position: absolute;
+    top: 25px;
+    left: 0;
+    z-index: 1;
+}
+
+.logo {
+    color: white;
+    font-size: 36px;
+    font-weight: bold;
+    white-space: nowrap;
+}
+
+nav {
+    display: flex;
+    gap: 35px;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+nav a:hover {
+    color: #c28b68;
+}
+
+.nav-button {
+    background-color: #743c28;
+    color: white;
+    text-decoration: none;
+    padding: 22px 30px;
+    border-radius: 5px;
+    font-family: Arial, sans-serif;
+}
+.hero {
+    height: 100vh;
+    min-height: 650px;
+    background-image:
+        linear-gradient(
+            to right,
+            rgba(0, 0, 0, 0.85),
+            rgba(0, 0, 0, 0.15)
+        ),
+        url("https://images.unsplash.com/photo-1442512595331-e89e73853f31?auto=format&fit=crop&w=2000&q=90");
+
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    align-items: center;
+    padding: 0 7%;
+}
+.content {
+    color: white;
+    max-width: 900px;
+    padding-top: 120px;
+}
+
+.content h3 {
+    font-size: 25px;
+    margin-bottom: 22px;
+}
+
+.content h1 {
+    font-size: 78px;
+    line-height: 1.12;
+    margin-bottom: 35px;
+}
+
+.content p {
+    color: #d0cece;
+    font-family: Arial, sans-serif;
+    font-size: 18px;
+    line-height: 1.7;
+    margin-bottom: 35px;
+    max-width: 850px;
+}
+
+.buttons {
+    display: flex;
+    gap: 22px;
+}
+
+.buttons a {
+    text-decoration: none;
+    padding: 22px 35px;
+    border-radius: 12px;
+    font-family: Arial, sans-serif;
+    font-size: 16px;
+}
+
+.book-button {
+    background-color: #4a2a1e;
+    color: white;
+}
+
+.shop-button {
+    background-color: white;
+    color: #222;
+}
+
+.book-button:hover {
+    background-color: #78442f;
+}
+
+.shop-button:hover {
+    background-color: #e6e6e6;
+}
+
+@media (max-width: 900px) {
+    .navbar {
+        height: auto;
+        min-height: 85px;
+        padding: 20px 5%;
+        flex-wrap: wrap;
+        gap: 18px;
+        top: 0;
+    }
+
+    nav {
+        gap: 15px;
+        flex-wrap: wrap;
+    }
+
+    nav a {
+        font-size: 15px;
+    }
+
+    .logo {
+        font-size: 28px;
+    }
+
+    .nav-button {
+        padding: 14px 18px;
+    }
+
+    .hero {
+        min-height: 750px;
+        padding: 0 5%;
+    }
+
+    .content h1 {
+        font-size: 52px;
+    }
+
+    .content p {
+        font-size: 16px;
+    }
+}
+
+@media (max-width: 500px) {
+    .content h1 {
+        font-size: 40px;
+    }
+
+    .content h3 {
+        font-size: 18px;
+    }
+
+    .buttons {
+        flex-wrap: wrap;
+        gap: 12px;
+    }
+
+    .buttons a {
+        padding: 17px 20px;
+    }
+
+    .nav-button {
+        font-size: 12px;
+    }
+}
