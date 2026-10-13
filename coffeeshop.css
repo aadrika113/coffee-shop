@@ -1,0 +1,159 @@
+body {
+    margin: 0;
+    font-family: Arial;
+    background-color: #f5eee7;
+}
+header {
+    background-color: rgb(86, 13, 13);
+    color: white;
+    padding: 15px 50px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+header h1 {
+    font-family: Georgia;
+}
+.links a {
+    color: white;
+    text-decoration: none;
+    margin: 12px;
+    font-size: 17px;
+}
+.links a:hover {
+    color: orange;
+}
+button {
+    background-color: #713c29;
+    color: white;
+    border: none;
+    padding: 15px 20px;
+    cursor: pointer;
+}
+.home {
+    height: 550px;
+    padding: 100px 50px 0 80px;
+    color: white;
+    background-color: #171311;
+}
+
+.home h3 {
+    font-size: 22px;
+}
+
+.home h1 {
+    font-family: Georgia;
+    font-size: 65px;
+    margin-top: 25px;
+}
+
+.home p {
+    font-size: 17px;
+    line-height: 1.6;
+    max-width: 750px;
+}
+
+.btn1 {
+    background-color: #713c29;
+    color: white;
+    padding: 15px 25px;
+    text-decoration: none;
+    display: inline-block;
+    margin-right: 15px;
+}
+
+.btn2 {
+    background-color: white;
+    color: black;
+    padding: 15px 25px;
+    text-decoration: none;
+    display: inline-block;
+}
+.about {
+    text-align: center;
+    padding: 50px;
+}
+
+.about h1 {
+    color: #713c29;
+}
+
+.about p {
+    max-width: 700px;
+    margin: auto;
+    line-height: 1.7;
+}
+
+.menu {
+    text-align: center;
+    padding: 40px 20px;
+    background-color: #eee0d2;
+}
+
+.menu h1 {
+    margin-bottom: 35px;
+}
+
+.coffee {
+    display: inline-block;
+    background-color: white;
+    width: 280px;
+    margin: 10px;
+    padding-bottom: 20px;
+}
+
+.coffee img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+}
+
+.coffee p {
+    color: #555;
+}
+
+.coffee h3 {
+    color: #713c29;
+}
+
+.contact {
+    text-align: center;
+    padding: 50px;
+}
+
+.contact p {
+    margin-bottom: 25px;
+}
+
+.footer {
+    background-color: #171311;
+    color: white;
+    text-align: center;
+    padding: 25px;
+}
+
+@media (max-width: 700px) {
+    header {
+        padding: 15px;
+        flex-wrap: wrap;
+        gap: 15px;
+    }
+    .links a {
+        margin: 5px;
+    }
+
+    .home {
+        padding: 70px 20px;
+        height: auto;
+        min-height: 450px;
+    }
+
+    .home h1 {
+        font-size: 40px;
+    }
+
+    .coffee {
+        width: 90%;
+    }
+}
